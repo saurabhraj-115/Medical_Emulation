@@ -31,7 +31,7 @@ class DatProd(object):
 while True:
     system('clear')
     dp = DatProd()
-    num=5
+    num=7
     #num=int(input("How many patients' data do you want to retrieve?"))
     dp.inputDat(num)
     system('atom patient_data.json')
