@@ -16,6 +16,6 @@ function loadJSON(callback) {
   loadJSON(function(response) {
    // Parse JSON string into object
      var actual_JSON = JSON.parse(response);
-     alert(actual_JSON[2].name);
+     alert(actual_JSON[250].name);
   });
  }
