@@ -1,5 +1,5 @@
 function loadJSON() {
-  var data_file = "https://github.com/saurabhraj-115/Medical_Emulation/blob/master/November/patient_data.json";
+  var data_file = "https://api.jsonbin.io/b/5d836435ec533d2cc4815efe";
   var http_request = new XMLHttpRequest();
   try {
     // Opera 8.0+, Firefox, Chrome, Safari
@@ -30,7 +30,7 @@ function loadJSON() {
 
       // jsonObj variable now contains the data structure and can
       // be accessed as jsonObj.name and jsonObj.country.
-      document.getElementById("Patient ID").innerHTML = jsonObj.patient_id;
+      /*document.getElementById("Patient ID").innerHTML = jsonObj.patient_id;
       document.getElementById("Name").innerHTML = jsonObj.name;
       document.getElementById("Email").innerHTML = jsonObj.email;
       document.getElementById("Address").innerHTML = jsonObj.address;
@@ -39,24 +39,27 @@ function loadJSON() {
       document.getElementById("Systolic Blood Pressure").innerHTML = jsonObj.systolic_BP;
       document.getElementById("Diatolic Blood Pressure").innerHTML = jsonObj.diatolic_BP;
       document.getElementById("Anesthesia Duration").innerHTML = jsonObj.anesthesia_duration;
+      */alert(jsonObj["0"]["name"]);
+      return jsonObj;
     }
   }
 
   http_request.open("GET", data_file, true);
   http_request.send();
-  return jsonObj;
+
 }
 
 
 
-
+/*
 function fetchDetails(){
   var callObj= loadJSON()
   var i;
   for (i=5; i>0; i--){
-    alert(callObj.Math.floor((Math.random() * 1000) + 1).name)
+    alert(callObj.Math.floor((Math.random() * 1000) + 1).name);
 
   }
 
 
 }
+*/
