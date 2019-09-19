@@ -1,10 +1,3 @@
-// function interface(obj, ind) {
-//   console.log(obj[ind]["name"] + " " + obj["ind"]["heart_rate"]);
-// }
-//
-
-
-
 function loadJSON(index) {
   var data_file = "https://api.jsonbin.io/b/5d836435ec533d2cc4815efe";
   var http_request = new XMLHttpRequest();
@@ -37,23 +30,8 @@ function loadJSON(index) {
 
       // jsonObj variable now contains the data structure and can
       // be accessed as jsonObj.name and jsonObj.country.
-      /*document.getElementById("Patient ID").innerHTML = jsonObj.patient_id;
-      document.getElementById("Name").innerHTML = jsonObj.name;
-      document.getElementById("Email").innerHTML = jsonObj.email;
-      document.getElementById("Address").innerHTML = jsonObj.address;
-      document.getElementById("Body Temp(F)").innerHTML = jsonObj.body_temo_degF;
-      document.getElementById("Heart Rate").innerHTML = jsonObj.heart_rate;
-      document.getElementById("Systolic Blood Pressure").innerHTML = jsonObj.systolic_BP;
-      document.getElementById("Diatolic Blood Pressure").innerHTML = jsonObj.diatolic_BP;
-      document.getElementById("Anesthesia Duration").innerHTML = jsonObj.anesthesia_duration;
-      alert(jsonObj["0"]["name"]);*/
-      // return jsonObj[index];
 
-      // var i;
-      // for (i = 5; i > 0; i--) {
-      //   interface(jsonObj, Math.floor(Math.random() * 500));
-      // }
-      console.log(jsonObj["210"]["name"]+ " " + jsonObj["210"]["body_temp_degF"]);
+      console.log(jsonObj["210"]["name"] + " " + jsonObj["210"]["body_temp_degF"]);
     }
   }
 
@@ -61,19 +39,3 @@ function loadJSON(index) {
   http_request.send();
 
 }
-
-
-//
-//
-// function fetchDetails(){
-//
-//   var i;
-//   for (i=5; i>0; i--){
-//     var callObj= {};
-//     callObj= loadJSON(i);
-//     console.log(callObj.name)
-//
-//   }
-
-//
-// }
