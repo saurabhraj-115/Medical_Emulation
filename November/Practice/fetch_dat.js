@@ -1,4 +1,11 @@
-function loadJSON() {
+// function interface(obj, ind) {
+//   console.log(obj[ind]["name"] + " " + obj["ind"]["heart_rate"]);
+// }
+//
+
+
+
+function loadJSON(index) {
   var data_file = "https://api.jsonbin.io/b/5d836435ec533d2cc4815efe";
   var http_request = new XMLHttpRequest();
   try {
@@ -39,8 +46,14 @@ function loadJSON() {
       document.getElementById("Systolic Blood Pressure").innerHTML = jsonObj.systolic_BP;
       document.getElementById("Diatolic Blood Pressure").innerHTML = jsonObj.diatolic_BP;
       document.getElementById("Anesthesia Duration").innerHTML = jsonObj.anesthesia_duration;
-      */alert(jsonObj["0"]["name"]);
-      return jsonObj;
+      alert(jsonObj["0"]["name"]);*/
+      // return jsonObj[index];
+
+      // var i;
+      // for (i = 5; i > 0; i--) {
+      //   interface(jsonObj, Math.floor(Math.random() * 500));
+      // }
+      console.log(jsonObj["210"]["name"]+ " " + jsonObj["210"]["body_temp_degF"]);
     }
   }
 
@@ -50,16 +63,17 @@ function loadJSON() {
 }
 
 
+//
+//
+// function fetchDetails(){
+//
+//   var i;
+//   for (i=5; i>0; i--){
+//     var callObj= {};
+//     callObj= loadJSON(i);
+//     console.log(callObj.name)
+//
+//   }
 
-/*
-function fetchDetails(){
-  var callObj= loadJSON()
-  var i;
-  for (i=5; i>0; i--){
-    alert(callObj.Math.floor((Math.random() * 1000) + 1).name);
-
-  }
-
-
-}
-*/
+//
+// }
