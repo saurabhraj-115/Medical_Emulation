@@ -31,7 +31,12 @@ function loadJSON(index) {
       // jsonObj variable now contains the data structure and can
       // be accessed as jsonObj.name and jsonObj.country.
 
-      alert(jsonObj["210"]["name"]+" "+jsonObj["210"]["address"] + " " + jsonObj["210"]["body_temp_degF"]);
+      alert("1\nName: "+jsonObj["210"]["name"]+"\n"+"Address: "+jsonObj["210"]["address"] + "\nBody Temp (F) " + jsonObj["210"]["body_temp_degF"]+"\n\n2\nName: "+jsonObj["200"]["name"]+"\n"+"Address: "+jsonObj["210"]["address"] + "\nBody Temp (F) " + jsonObj["210"]["body_temp_degF"]+"\n\n3\nName: "+jsonObj["220"]["name"]+"\n"+"Address: "+jsonObj["220"]["address"] + "\nBody Temp (F) " + jsonObj["220"]["body_temp_degF"]+"\n\n4\nName: "+jsonObj["240"]["name"]+"\n"+"Address: "+jsonObj["240"]["address"] + "\nBody Temp (F) " + jsonObj["240"]["body_temp_degF"]);
+      // alert("\nName: "+jsonObj["200"]["name"]+"\n"+"Address: "+jsonObj["210"]["address"] + "\nBody Temp (F) " + jsonObj["210"]["body_temp_degF"]);
+      // alert("\nName: "+jsonObj["220"]["name"]+"\n"+"Address: "+jsonObj["220"]["address"] + "\nBody Temp (F) " + jsonObj["220"]["body_temp_degF"]);
+      // alert("\nName: "+jsonObj["230"]["name"]+"\n"+"Address: "+jsonObj["230"]["address"] + "\nBody Temp (F) " + jsonObj["230"]["body_temp_degF"]);
+      // alert("\nName: "+jsonObj["240"]["name"]+"\n"+"Address: "+jsonObj["240"]["address"] + "\nBody Temp (F) " + jsonObj["240"]["body_temp_degF"]);
+
     }
   }
 
