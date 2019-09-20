@@ -31,7 +31,7 @@ function loadJSON(index) {
       // jsonObj variable now contains the data structure and can
       // be accessed as jsonObj.name and jsonObj.country.
 
-      console.log(jsonObj["210"]["name"] + " " + jsonObj["210"]["body_temp_degF"]);
+      alert(jsonObj["210"]["name"]+" "+jsonObj["210"]["address"] + " " + jsonObj["210"]["body_temp_degF"]);
     }
   }
 
