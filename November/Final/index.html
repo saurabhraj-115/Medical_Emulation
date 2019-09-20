@@ -52,7 +52,9 @@
           var jadd= jsonObj[i]["address"]
           var jsbp= jsonObj[i]["systolic_BP"]
           var jdbp= jsonObj[i]["diatolic_BP"]
-          document.getElementById("demo").innerHTML="\nSytolic BP = "+ jsbp + "\nDiatolic BP =" + jdbp;
+          var jtemp= jsonObj[i]["body_temp_degF"]
+          var jheart= jsonObj[i]["heart_rate"]
+          document.getElementById("demo").innerHTML="\nSystolic BP = "+ jsbp + "\nDiatolic BP =" + jdbp+ "\nTemperature (F) = "+ jtemp + "\nHeart Rate = "+jheart ;
 
           // jsonObj variable now contains the data structure and can
           // be accessed as jsonObj.name and jsonObj.country.
