@@ -4,9 +4,38 @@
 <meta content="text/html; charset = ISO-8859-1" http-equiv="content-type">
 
 <head>
+  <style>
+    body {
+  background-color: #000000;
+          }
+          
+h1 {
+  color: white;
+  text-align: center;
+  font: verdana;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font: verdana;
+}
+p{
+  color: white;
+  text-align: left;
+  font: verdana;
+    
+  }
+ h3{
+   
+    color: white;
+    text-allign: left;
+   } 
+
+
+  </style>
   <h1>Wipro Limited</h1>
   <h2>Patient Database:</h2>
-  <h2>Mr. John Mayer</h2>
+  <h3>Mr. John Mayer</h3>
 
 
 
@@ -14,7 +43,7 @@
 
   <script>
     var i = -1;
-    var newVar = setInterval(loadJSON, 1000)
+    var newVar = setInterval(loadJSON, 500)
 
     function loadJSON() {
       var data_file = "https://saurabhraj-115.github.io/Medical_Emulation/November/patient_data.json";
@@ -80,6 +109,8 @@
   <button onclick="document.getElementById('demo').innerHTML=
                 fetchDetails()">Send Encrypted data to server</button>
   <script></script>
+  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 </head>
 
