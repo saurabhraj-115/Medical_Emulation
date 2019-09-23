@@ -5,29 +5,29 @@
 
 <head>
   <style>
-    body {
+  /*  body {
   background-color: #000000;
-          }
+    */      }
           
 h1 {
-  color: white;
+  color: black;
   text-align: center;
   font: verdana;
 }
 h2 {
-  color: white;
+  color: black;
   text-align: center;
   font: verdana;
 }
 p{
-  color: white;
+  color: black;
   text-align: left;
   font: verdana;
     
   }
  h3{
    
-    color: white;
+    color: black;
     text-allign: left;
    } 
 
@@ -92,6 +92,7 @@ p{
 
       http_request.open("GET", data_file, true);
       http_request.send();
+      
 
     }
   </script>
@@ -108,10 +109,20 @@ p{
 
   <button onclick="document.getElementById('demo').innerHTML=
                 fetchDetails()">Send Encrypted data to server</button>
-  <script></script>
   
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+  <div id="tester" style="width:600px;height:250px;"></div>
+    <script src="plotly-latest.min.js"></script>
 
+    <script>
+      TESTER = document.getElementById('tester');
+	Plotly.plot( TESTER, [{
+	x: [1, 2, 3, 4, 5],
+	y: [1, 2, 4, 8, 16] }], {
+	margin: { t: 0 } } );
+    </script>
+  
+  
 </head>
 
 <body>
