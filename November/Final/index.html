@@ -5,33 +5,35 @@
 
 <head>
   <style>
-  /*  body {
+    /*  body {
   background-color: #000000;
-    */      }
-          
-h1 {
-  color: black;
-  text-align: center;
-  font: verdana;
-}
-h2 {
-  color: black;
-  text-align: center;
-  font: verdana;
-}
-p{
-  color: black;
-  text-align: left;
-  font: verdana;
-    
-  }
- h3{
-   
-    color: black;
-    text-allign: left;
-   } 
 
+    }*/
 
+    h1 {
+      color: black;
+      text-align: center;
+      font: verdana;
+    }
+
+    h2 {
+      color: black;
+      text-align: center;
+      font: verdana;
+    }
+
+    p {
+      color: black;
+      text-align: left;
+      font: verdana;
+
+    }
+
+    h3 {
+
+      color: black;
+      text-allign: left;
+    }
   </style>
   <h1>Wipro Limited</h1>
   <h2>Patient Database:</h2>
@@ -43,7 +45,9 @@ p{
 
   <script>
     var i = -1;
-    var newVar = setInterval(loadJSON, 500)
+    var onevar = setTimeout(loadJSON, 1);
+    var newVar = setInterval(showJSON, 500);
+    var jsonObj;
 
     function loadJSON() {
       var data_file = "https://saurabhraj-115.github.io/Medical_Emulation/November/patient_data.json";
@@ -73,18 +77,8 @@ p{
 
         if (http_request.readyState == 4) {
           // Javascript function JSON.parse to parse JSON data
-          var jsonObj = JSON.parse(http_request.responseText);
+          jsonObj = JSON.parse(http_request.responseText);
 
-
-          i += 1;
-          var n = toString(i)
-          var jname = jsonObj[i]["name"];
-          var jadd = jsonObj[i]["address"];
-          var jsbp = jsonObj[i]["systolic_BP"];
-          var jdbp = jsonObj[i]["diatolic_BP"];
-          var jtemp = jsonObj[i]["body_temp_degF"];
-          var jheart = jsonObj[i]["heart_rate"];
-          document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp + "\nTemperature (F) = " + jtemp + "\nHeart Rate = " + jheart;
 
 
         }
@@ -92,14 +86,28 @@ p{
 
       http_request.open("GET", data_file, true);
       http_request.send();
-      
 
+
+    }
+
+    function showJSON() {
+
+
+      i += 1;
+      var n = toString(i)
+      var jname = jsonObj[i]["name"];
+      var jadd = jsonObj[i]["address"];
+      var jsbp = jsonObj[i]["systolic_BP"];
+      var jdbp = jsonObj[i]["diatolic_BP"];
+      var jtemp = jsonObj[i]["body_temp_degF"];
+      var jheart = jsonObj[i]["heart_rate"];
+      document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp + "\nTemperature (F) = " + jtemp + "\nHeart Rate = " + jheart;
     }
   </script>
 
-<script>
-  
-</script>
+  <script>
+
+  </script>
 
 
   <!-- <button onclick="document.getElementById('demo').innerHTML=
@@ -109,20 +117,24 @@ p{
 
   <button onclick="document.getElementById('demo').innerHTML=
                 fetchDetails()">Send Encrypted data to server</button>
-  
-  
-  <div id="tester" style="width:600px;height:250px;"></div>
-    <script src="plotly-latest.min.js"></script>
 
-    <script>
-      TESTER = document.getElementById('tester');
-	Plotly.plot( TESTER, [{
-	x: [1, 2, 3, 4, 5],
-	y: [1, 2, 4, 8, 16] }], {
-	margin: { t: 0 } } );
-    </script>
-  
-  
+
+  <div id="tester" style="width:600px;height:250px;"></div>
+  <script src="plotly-latest.min.js"></script>
+
+  <script>
+    TESTER = document.getElementById('tester');
+    Plotly.plot(TESTER, [{
+      x: [1, 2, 3, 4, 5],
+      y: [1, 2, 4, 8, 16]
+    }], {
+      margin: {
+        t: 0
+      }
+    });
+  </script>
+
+
 </head>
 
 <body>
