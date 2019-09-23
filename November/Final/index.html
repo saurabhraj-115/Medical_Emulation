@@ -45,16 +45,16 @@
         if (http_request.readyState == 4) {
           // Javascript function JSON.parse to parse JSON data
           var jsonObj = JSON.parse(http_request.responseText);
-          // var n= toString(Math.floor(Math.random() *200))
+
 
           i += 1;
           var n = toString(i)
-          var jname = jsonObj[i]["name"]
-          var jadd = jsonObj[i]["address"]
-          var jsbp = jsonObj[i]["systolic_BP"]
-          var jdbp = jsonObj[i]["diatolic_BP"]
-          var jtemp = jsonObj[i]["body_temp_degF"]
-          var jheart = jsonObj[i]["heart_rate"]
+          var jname = jsonObj[i]["name"];
+          var jadd = jsonObj[i]["address"];
+          var jsbp = jsonObj[i]["systolic_BP"];
+          var jdbp = jsonObj[i]["diatolic_BP"];
+          var jtemp = jsonObj[i]["body_temp_degF"];
+          var jheart = jsonObj[i]["heart_rate"];
           document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp + "\nTemperature (F) = " + jtemp + "\nHeart Rate = " + jheart;
 
 
@@ -67,8 +67,13 @@
     }
   </script>
 
-  <button onclick="document.getElementById('demo').innerHTML=
-                fetchDetails()">Send Patients' Records to Server</button>
+<script>
+  
+</script>
+
+
+  <!-- <button onclick="document.getElementById('demo').innerHTML=
+                fetchDetails()">Send Patients' Records to Server</button> -->
 
   <script></script>
 
