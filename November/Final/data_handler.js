@@ -44,7 +44,7 @@ function loadJSON() {
 function showJSON() {
 
 
-  i += 1;
+ i += 1;
   var n = toString(i)
   var jname = jsonObj[i]["name"];
   var jadd = jsonObj[i]["address"];
@@ -55,5 +55,15 @@ function showJSON() {
   document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp + "\nTemperature (F) = " + jtemp /*+ "\nHeart Rate = " + jheart*/ ;
   x.push(i);
   y.push(jheart);
+  var trace1 = {
+    x,
+    y,
+    type: 'scatter',
+  };
+  var data = [trace1];
+  Plotly.newPlot('myDiv', data, {}, {
+    showSendToCloud: true
+  });
+  // return jheart;
 
 }

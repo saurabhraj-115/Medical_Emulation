@@ -55,26 +55,33 @@
 
 <body>
 
-  <div id="myDiv" style=height:550px; margin-top: 150px; margin-left: 80px></div>
+  <div id="myDiv" style="padding: 50px; margin: auto"></div>
   <script>
     var x = [];
     var y = [];
     var i = -1;
+    var jsonObj;
     var onevar = setTimeout(loadJSON, 1);
     var newVar = setInterval(showJSON, 500);
-    var jsonObj;
-    var trace1 = {
-      x,
-      y,
-      type: 'scatter',
-    };
 
 
-    var data = [trace1];
-
-    Plotly.newPlot('myDiv', data, {}, {
-      showSendToCloud: true
-    });
+    // do {
+    //   i += 1;
+    //   x.push(i + 1);
+    //   y.push(loadJSON());
+    //   var trace1 = {
+    //     x[],
+    //     y[],
+    //     type: 'scatter',
+    //   };
+    //   var data = [trace1];
+    //   Plotly.newPlot('myDiv', data, {}, {
+    //     showSendToCloud: true
+    //   });
+    //
+    //
+    // }
+    // while (true);
   </script>
 
 
