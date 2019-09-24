@@ -44,10 +44,10 @@ function loadJSON() {
 function showJSON() {
 
 
- i += 1;
+  i += 1;
   var n = toString(i)
-  var jname = jsonObj[i]["name"];
-  var jadd = jsonObj[i]["address"];
+  // var jname = jsonObj[i]["name"];
+  // var jadd = jsonObj[i]["address"];
   var jsbp = jsonObj[i]["systolic_BP"];
   var jdbp = jsonObj[i]["diatolic_BP"];
   var jtemp = jsonObj[i]["body_temp_degF"];

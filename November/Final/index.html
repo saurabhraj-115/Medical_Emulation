@@ -4,53 +4,24 @@
 <meta content="text/html; charset = ISO-8859-1" http-equiv="content-type">
 
 <head>
-  <style>
-    body {
-      background-color: #000000;
 
-    }
 
-    h1 {
-      color: white;
-      text-align: center;
-      font: verdana;
-    }
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
-    h2 {
-      color: white;
-      text-align: center;
-      font: verdana;
-    }
-
-    p {
-      margin-top: 80px;
-      border: 2px dashed yellow;
-      border-radius: 5px;
-      padding: 30px;
-      color: white;
-      text-align: center;
-      font: verdana;
-
-    }
-
-    h3 {
-
-      color: white;
-      text-allign: left;
-    }
-
-    d {
-      color
-    }
-  </style>
   <h1>Wipro Limited</h1>
   <h2>Patient Database:</h2>
   <h3>Mr. John Mayer</h3>
+
+
   <p id="demo"></p>
   <script src="data_handler.js"></script>
+
   <button onclick="document.getElementById('demo').innerHTML=
                 fetchDetails()">Send Encrypted data to server</button>
+
   <script src="plotly-latest.min.js"></script>
+
+
 </head>
 
 <body>
@@ -63,27 +34,7 @@
     var jsonObj;
     var onevar = setTimeout(loadJSON, 1);
     var newVar = setInterval(showJSON, 500);
-
-
-    // do {
-    //   i += 1;
-    //   x.push(i + 1);
-    //   y.push(loadJSON());
-    //   var trace1 = {
-    //     x[],
-    //     y[],
-    //     type: 'scatter',
-    //   };
-    //   var data = [trace1];
-    //   Plotly.newPlot('myDiv', data, {}, {
-    //     showSendToCloud: true
-    //   });
-    //
-    //
-    // }
-    // while (true);
   </script>
-
 
 
 </body>

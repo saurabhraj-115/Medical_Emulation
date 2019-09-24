@@ -1,0 +1,34 @@
+body {
+  background-color: #000000;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font: verdana;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font: verdana;
+}
+
+p {
+  margin-top: 80px;
+  border: 2px dashed yellow;
+  border-radius: 5px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  font: verdana;
+}
+
+h3 {
+  color: white;
+  text-allign: left;
+}
+
+d {
+  color
+}
