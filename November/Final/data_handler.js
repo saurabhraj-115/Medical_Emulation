@@ -59,9 +59,57 @@ function showJSON() {
     x,
     y,
     type: 'scatter',
+    name: 'Patient Heart Rate'
   };
   var data = [trace1];
-  Plotly.newPlot('myDiv', data, {}, {
+  
+  
+  
+  
+  var layout = {
+  title: {
+    text:'Wipro Medicare',
+    font: {
+      family: 'Courier New, monospace',
+      size: 24
+    },
+    xref: 'paper',
+    x: 0.05,
+  },
+  xaxis: {
+    showgrig: true,
+    gridcolor: '#063e0f',
+    gridwidth: 1,
+    title: {
+      text: 'Time Elapsed(s)',
+      font: {
+        family: 'Courier New, monospace',
+        size: 18,
+        color: '#7f7f7f'
+      }
+    },
+  },
+  yaxis: {
+    showgrig: true,
+    gridcolor: '#063e0f',
+    gridwidth: 1,
+    title: {
+      text: 'Heart Rate',
+      font: {
+        family: 'Courier New, monospace',
+        size: 18,
+        color: '#7f7f7f'
+      }
+    }
+  }
+};
+  
+  
+  
+  
+  
+  
+  Plotly.newPlot('myDiv', data, layout,{}, {
     showSendToCloud: true
   });
   // return jheart;
