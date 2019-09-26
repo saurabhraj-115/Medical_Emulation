@@ -1,0 +1,55 @@
+/* body {
+  background-color: #000000;
+} */
+h1 {
+  color: white;
+  text-align: center;
+  font: verdana;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font: verdana;
+}
+
+h3 {
+  font-size: large;
+  color: white;
+  text-align: center;
+  font: verdana;
+}
+
+p {
+  margin-top: 80px;
+  border: 8px dashed yellow;
+  border-radius: 5px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  font: verdana;
+}
+
+h3 {
+  color: white;
+  text-allign: left;
+}
+
+.leftside, .rightside {
+  height: 50vh;
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .leftside, .rightside {
+    height: 100vh;
+  }
+}
+
+.leftside {
+  background: black;
+}
+
+.rightside {
+  background: blue;
+}
