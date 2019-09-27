@@ -60,8 +60,8 @@ function showJSON() {
 
   var layout = {
     autosize: false,
-    width: 500,
-    height: 500,
+    width: 700,
+    height: 700,
     title: {
       text: 'Wipro Medicare',
       font: {
@@ -101,19 +101,22 @@ function showJSON() {
     paper_bgcolor: '#7f7f7f'
   };
 
+
+document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp;
+
   Plotly.newPlot('myDiv', data, layout, {}, {
     showSendToCloud: true
   });
 }
 
 
-
-
-function vitalStat(){
-
-  var j;
-  while(true){
-    document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp + "\nTemperature (F) = " + jtemp;
-  }
-
-}
+//
+//
+// function vitalStat(){
+//
+//   var j;
+//   while(true){
+//     document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp + "\nTemperature (F) = " + jtemp;
+//   }
+//
+// }
