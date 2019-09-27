@@ -61,3 +61,21 @@ h3 {
 .rightside {
   background: blue;
 }
+
+
+
+div.r {
+  position: right;
+  left: -10px;
+  width: 100px;
+  height: 120px;
+  border: 3px solid blue;
+}
+
+div.l {
+  position: left;
+  left: -10px;
+  width: 100px;
+  height: 120px;
+  border: 3px solid blue;
+}
