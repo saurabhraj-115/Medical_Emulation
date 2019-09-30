@@ -67,51 +67,51 @@ function showJSON() {
   
   
   var layout = {
-  title: {
-    text:'Wipro Medicare',
-    font: {
-      family: 'Courier New, monospace',
-      size: 24
-    },
-    xref: 'paper',
-    x: 0.05,
-  },
-  xaxis: {
-    showgrig: true,
-    gridcolor: '#063e0f',
-    gridwidth: 1,
+    autosize: true,
+    // width: 1500,
+    // height: 1500,
     title: {
-      text: 'Time Elapsed(s)',
+      text: 'Wipro Medicare',
       font: {
         family: 'Courier New, monospace',
-        size: 18,
-        color: '#7f7f7f'
+        size: 24
+      },
+      xref: 'paper',
+      x: 0.05,
+    },
+    xaxis: {
+      showgrig: true,
+      gridcolor: '#063e0f',
+      gridwidth: 1,
+      title: {
+        text: 'Time Elapsed(s)',
+        font: {
+          family: 'Courier New, monospace',
+          size: 30,
+          color: 'black'
+        }
+      },
+    },
+    yaxis: {
+      showgrig: true,
+      gridcolor: '#063e0f',
+      gridwidth: 1,
+      title: {
+        text: 'Heart Rate',
+        font: {
+          family: 'Courier New, monospace',
+          size: 30,
+          color: 'black'
+        }
       }
     },
-  },
-  yaxis: {
-    showgrig: true,
-    gridcolor: '#063e0f',
-    gridwidth: 1,
-    title: {
-      text: 'Heart Rate',
-      font: {
-        family: 'Courier New, monospace',
-        size: 18,
-        color: '#7f7f7f'
-      }
-    }
-  }
-};
-  
-  
-  
-  
-  
-  
-  Plotly.newPlot('myDiv', data, layout,{}, {
+    plot_bgcolor: "black",
+    paper_bgcolor: '#7f7f7f'
+  };
+
+  Plotly.newPlot('myDiv', data, layout, {}, {
     showSendToCloud: true
   });
-  // return jheart;
+  
 
 }
