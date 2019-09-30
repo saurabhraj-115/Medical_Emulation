@@ -52,7 +52,9 @@ function showJSON() {
   var jdbp = jsonObj[i]["diatolic_BP"];
   var jtemp = jsonObj[i]["body_temp_degF"];
   var jheart = jsonObj[i]["heart_rate"];
-  document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp + "\nTemperature (F) = " + jtemp /*+ "\nHeart Rate = " + jheart*/ ;
+  document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp ;
+  document.getElementById("demo").innerHTML = "\nTemperature (F) = " + jtemp ;
+
   x.push(i);
   y.push(jheart);
   var trace1 = {
