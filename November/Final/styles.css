@@ -4,7 +4,7 @@ body {
 
 h1 {
   color: white;
-  text-align: center;
+  text-align: left;
   font: verdana;
 }
 
@@ -37,7 +37,7 @@ p.two {
 p.one{
 
 padding: 30px;
-
+  font-size: 25px;
   color: red;
   text-align: center;
   font: verdana;
