@@ -69,7 +69,7 @@ function showJSON() {
   var layout = {
     autosize: true,
     // width: 1500,
-    // height: 1500,
+    height: 1000,
     title: {
       text: 'Wipro Medicare',
       font: {
