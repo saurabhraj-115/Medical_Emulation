@@ -39,7 +39,6 @@ function loadJSON() {
 
 }
 
-// <div id="tester" style="width:600px;height:250px; margin-top: 150px; margin-left: 80px; color: white;">
 
 function showJSON() {
 
@@ -52,8 +51,7 @@ function showJSON() {
   var jdbp = jsonObj[i]["diatolic_BP"];
   var jtemp = jsonObj[i]["body_temp_degF"];
   var jheart = jsonObj[i]["heart_rate"];
-  document.getElementById("demo").innerHTML = "\nSystolic BP = " + jsbp + "\nDiatolic BP =" + jdbp ;
-  document.getElementById("demo").innerHTML = "\nTemperature (F) = " + jtemp ;
+  document.getElementById("demo").innerHTML = jsbp+"/"+jdbp;
 
   x.push(i);
   y.push(jheart);

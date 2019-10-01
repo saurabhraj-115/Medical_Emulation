@@ -18,18 +18,27 @@ h2 {
 h3 {
   font-size: large;
   color: white;
-  text-align: center;
+  text-align: left;
   font: verdana;
 }
 
 
 
-p {
+p.two {
   margin-top: 80px;
-  border: 4px solid gold;
-  border-radius: 5px;
+  /* border: 1px solid gold;
+  border-radius: 8px; */
   padding: 30px;
   color: white;
+  text-align: center;
+  font: verdana;
+}
+
+p.one{
+
+padding: 30px;
+
+  color: red;
   text-align: center;
   font: verdana;
 }
