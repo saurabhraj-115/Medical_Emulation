@@ -49,9 +49,9 @@ function showJSON() {
   // var jadd = jsonObj[i]["address"];
   var jsbp = jsonObj[i]["systolic_BP"];
   var jdbp = jsonObj[i]["diatolic_BP"];
-  var jtemp = jsonObj[i]["body_temp_degF"];
+  //var jtemp = jsonObj[i]["body_temp_degF"];
   var jheart = jsonObj[i]["heart_rate"];
-  document.getElementById("demo").innerHTML = jsbp+"/"+jdbp;
+  document.getElementById("demo").innerHTML = jsbp+" / "+jdbp;
 
   x.push(i);
   y.push(jheart);

@@ -13,17 +13,22 @@ class DatProd(object):
         patdat={}
         for i in range(x):
             patdat[i]={}
-            #patdat[i]['patient_id']=str(i+201909)
-            #patdat[i]['name']=fake.name()
-            #patdat[i]['email']=fake.email()
-            #patdat[i]['country']=fake.country()
-            #patdat[i]['address']=fake.address()
-            #patdat[i]['name']=fake.name()
-            patdat[i]['body_temp_degF']=str(round(random.uniform(97.3,101.2),1))
-            patdat[i]['heart_rate']=str(round(random.uniform(75.0,85.0),1))
-            patdat[i]['systolic_BP']=str(round(random.uniform(112.0,125.0),1))
-            patdat[i]['diatolic_BP']=str(round(random.uniform(67.0,89.0),1))
-            #patdat[i]['anesthesia_duration']=str(round(random.uniform(192.0,305.0),1))
+            patdat[i]['heart_rate']=str(0)
+            patdat[i]['systolic_BP']=str(round(random.uniform(118.0,122.0),1))
+            patdat[i]['diatolic_BP']=str(round(random.uniform(77.0,83.0),1))
+        i=0
+        while (i<=490):
+            patdat[i]['heart_rate']=str(80)
+            patdat[i+1]['heart_rate']=str(80)
+            patdat[i+2]['heart_rate']=str(80)
+            patdat[i+3]['heart_rate']=str(85)
+            patdat[i+4]['heart_rate']=str(60)
+            patdat[i+5]['heart_rate']=str(100)
+            patdat[i+6]['heart_rate']=str(80)
+            patdat[i+7]['heart_rate']=str(83)
+            patdat[i+8]['heart_rate']=str(80)
+            patdat[i+9]['heart_rate']=str(80)
+            i+=10
 
         with open('patient_data.json', 'w') as fp:
             json.dump(patdat, fp)
@@ -32,7 +37,5 @@ while True:
     system('clear')
     dp = DatProd()
     num=5000
-    #num=int(input("How many patients' data do you want to retrieve?"))
     dp.inputDat(num)
-    #system('atom patient_data.json')
     break
