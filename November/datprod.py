@@ -17,7 +17,7 @@ class DatProd(object):
             patdat[i]['systolic_BP']=str(round(random.uniform(118.0,122.0),1))
             patdat[i]['diatolic_BP']=str(round(random.uniform(77.0,83.0),1))
         i=0
-        while (i<=490):
+        while (i<=4990):
             patdat[i]['heart_rate']=str(80)
             patdat[i+1]['heart_rate']=str(80)
             patdat[i+2]['heart_rate']=str(80)
