@@ -1,5 +1,7 @@
 body {
-  background-color: #000000;
+  background-image: url("mat.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 h1 {
@@ -37,8 +39,26 @@ p.two {
 p.one{
 
 padding: 30px;
-  font-size: 25px;
-  color: red;
+  font-size: 40px;
+  color: rgba(255, 0, 0, 0.466);
   text-align: center;
   font: verdana;
 }
+
+p.three{
+
+    /* padding: 30px; */
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    font: verdana;
+  }
+
+  p.four{
+
+      /* padding: 30px; */
+      font-size: 80px;
+      color: white;
+      text-align: left;
+      font: verdana;
+    }
