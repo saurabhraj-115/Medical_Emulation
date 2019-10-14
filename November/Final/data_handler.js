@@ -113,5 +113,31 @@ function showJSON() {
     showSendToCloud: true
   });
   
+  function sendToRemote(){
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time
+    var data= {
+      "timestamp": dateTime, "heartrate": jheart, "systolicBP": jsbp, "diatolicBP": jdbp};
+      var url= "**********************************************************";
+      jQuery.ajax({        
+        type: "POST",
+        crossDomain:true,
+        url: url,
+        data: JSON.stringify(data),
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        async: false,
+        success: function(){
+           alert("success");
+        }
+    });
+      
+    }
 
-}
+
+  }
+
+
+
